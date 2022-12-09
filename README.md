@@ -1,0 +1,2 @@
+# lefejlesztech
+barmit lefejlesztunk
