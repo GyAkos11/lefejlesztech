@@ -1,0 +1,70 @@
+
+  .grid {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr;
+  }
+  .main {
+
+	color: white;
+  }
+  .side {
+
+  }
+  .main,
+  .side {
+	
+	margin: 40px;
+	padding: 2%;
+	border-radius: 10px
+  }
+  .fokep{
+	animation: myfirst 1s;
+	animation-direction: alternate;
+	position: relative;
+	border-radius: 15px;
+	width: 800px;
+  }
+
+  .fokep2{
+	animation: mysecond 1s;
+	animation-direction: alternate;
+	position: relative;
+	border-radius: 15px;
+	width: 800px;
+  }
+
+  @keyframes myfirst {
+	0%   {left: 200px; top: 0px;}
+	100%  {left: 0px; top: 0px;}
+
+  }
+  @keyframes mysecond {
+	0%   {left: -200px; top: 0px;}
+	100%  {left: 0px; top: 0px;}
+
+  }
+  @media(max-width:500px){
+	.grid {
+	  grid-template-columns: 1fr;
+	}
+	.fokep{
+		width: 350px;
+	  }
+  }
+
+.alcim3,.leiras3{
+	text-align: center;
+}
+.leiras1,.leiras2{
+	text-align: justify;
+	
+}
+.leiras3{
+	font-size: 1.6em;
+	font-style: italic;
+}
+.alcim3{
+	font-size: 1.9em;
+}
+

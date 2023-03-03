@@ -1,14 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
 html,
 body {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-	overflow: hidden;
+	overflow-y: scroll;
 }
+html{
+	overflow: auto;
+	overflow-x: hidden;
+}
+
 
 body {
 	font-family: "Roboto", sans-serif;
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background-image: linear-gradient(135deg, #000000 0%, #3f0c72 100%);
 }
 
 h1 {
@@ -21,6 +30,7 @@ h1 {
 }
 
 .nav-wrapper {
+
 	display: flex;
 	position: relative;
 	flex-direction: row;
@@ -65,12 +75,13 @@ h1 {
 }
 
 .nav-tab{
+	font-size: 1em;
+	font-family: 'Oswald', sans-serif;
 	transition: 400ms;
 }
 
 .nav-tab:hover{
-	font-size: 20px;
-	color: #0087ca;
+	color: #3f0c72;
 }
 
 .nav-tab,
@@ -176,6 +187,8 @@ h1 {
 }
 
 .hover-underline-animation {
+	color: #000000;
+	text-decoration: none;
 	display: inline-block;
 	position: relative;
   }
@@ -188,7 +201,7 @@ h1 {
 	height: 3px;
 	bottom: 0;
 	left: 0;
-	background-color: #0087ca;
+	background-color: #3f0c72;
 	transform-origin: bottom right;
 	transition: transform 0.25s ease-out;
   }
