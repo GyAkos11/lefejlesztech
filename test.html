@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webshop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+      
+      header h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      nav li {
+        float: left;
+      }
+      
+      nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      nav li a:hover {
+        background-color: #111;
+      }
+      
+      main {
+        padding: 20px;
+      }
+      
+      .products h2 {
+        font-size: 24px;
+      }
+      
+      .products ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .products li {
+        flex: 1 1 300px;
+        margin: 10px;
+      }
+      
+      .products li a {
+        display: block;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+      }
+      
+      .products li a:hover {
+        border-color: #333;
+      }
+      
+      .products li img {
+        max-width: 100%;
+        height: auto;
+    }
+    .cart-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.cart-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #0077be; /* blue color */
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.cart-count {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #0077be; /* blue color */
+  color: #fff;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+}
+
+        </style>
+    <header>
+      <h1>My Webshop</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="products">
+        <h2>Featured Products</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="product1.jpg" alt="Product 1">
+              <h3>Product 1</h3>
+              <p>$19.99</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="product2.jpg" alt="Product 2">
+              <h3>Product 2</h3>
+              <p>$24.99</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="product3.jpg" alt="Product 3">
+              <h3>Product 3</h3>
+              <p>$29.99</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu at lectus suscipit pretium.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Webshop</p>
+    </footer>
+    <div class="cart-button">
+        <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        <span class="cart-count">0</span>
+      </div>
+  </body>
+</html>
